@@ -1,0 +1,191 @@
+@import "skeleton.scss"
+@import "normalize.scss"
+
+// Base Code
+
+h1
+  color: #ccc
+  text-align: center
+  font:
+    size: 50px
+
+figure
+  margin: auto
+
+.content
+  position: relative
+  background: white
+  overflow: hidden
+
+  article
+    padding: 50px 0
+    max-width: 640px
+    margin: 0 auto
+    text-align: center
+
+
+img
+  max-width: 100%
+
+
+.about
+  width: 790px
+  height: 410px
+  position: absolute
+  left: 50%
+  margin-left: -370px
+  //background-color: purple
+  .social
+    width: 50px
+    height: 150px
+    position: inherit
+    margin-top: 80px
+    //background-color: #ffc0cb
+    .twitter
+      width: inherit
+      height: 50px
+      background:
+        image: url('../images/twitter.png')
+        size: cover
+      transition: all 0.5s ease-in-out
+      &:hover
+        background:
+          image: url('../images/twitter_hover_2.png')
+          size: cover
+        border-radius: 5px
+
+    .spotify
+      width: 50px
+      height: 50px
+      margin:
+        top: 10px
+        left: 0px
+      background:
+        image: url('../images/spotify.png')
+        size: cover
+      transition: all 0.5s ease-in-out
+      &:hover
+        background:
+          image: url('../images/spotify_hover.png')
+          size: cover
+        border-radius: 5px
+
+    .facebook
+      width: inherit
+      height: 50px
+      margin-top: 15px
+      background:
+        image: url('../images/facebook.png')
+        size: cover
+      transition: all 0.5s ease-in-out
+      &:hover
+        background:
+          image: url('../images/facebook_hover.png')
+          size: cover
+        border-radius: 5px
+
+  .me
+    width: 300px
+    height: 370px
+    //background-color: blue
+    margin-left: 70px
+    .me-foto
+      width: 300px
+      height: 300px
+      border-radius: 50%
+      background:
+        image: url('../images/profile.jpeg')
+        size: cover
+      margin-top: 20px
+    .me-text
+      h1
+        font-size: 50px
+        margin-top: 10px
+
+  .txt
+    width: 400px
+    height: 200px
+    position: inherit
+    margin:
+      left: 390px
+      top: -320px
+
+
+
+footer
+  background-color: #ffc0c8
+  margin-top: 450px
+  a
+    color: white
+    background-color: lighten(black, 40%)
+    text:
+      align: center
+      decoration: none
+    display: block
+    width: 100%
+    line-height: 4
+    font-size: 60px
+    transition: all 0.5s ease-in-out
+    &:hover
+      background-color: lighten(black, 20%)
+      color: white
+
+
+
+
+//@import "social.css"
+//paralax
+
+.flower-box
+  height: 500px
+  width: auto
+  position: relative
+  background:
+    image: url('../images/flower.jpg')
+    size: cover
+    repeat: no-repeat
+    attachment: fixed
+
+.logo
+  height: 100%
+  width: 100%
+  background:
+    image: url('../images/logo.svg')
+    position: center center
+    repeat: no-repeat
+  position: absolute
+
+.macro-photo
+  width: auto
+  height: 600px
+  position: relative
+  background:
+    image: url('../images/flower_2b.jpg')
+    size: cover
+    attachment: fixed
+
+.portrait
+  position: relative
+  height: 700px
+  width: 700px
+  left: 50%
+  margin-left: -350px
+  background:
+    image: url('../images/portrait.png')
+    size: cover
+    attachment: fixed
+  border-radius: 50%
+  display: flex
+
+
+
+// media
+
+
+//tablet
+@media (max-width: 800px)
+  @import "tablet.sass"
+
+//Mobile
+@media (max-width: 610px)
+  @import "mobile.sass"

@@ -1,0 +1,52 @@
+body {
+  width: auto;
+}
+
+p {
+  text-align: center;
+}
+
+.about {
+  width: 250px;
+  height: auto;
+  margin-left: -125px;
+  left: 50%;
+}
+
+.about .me-foto {
+  margin-top: 450px;
+}
+
+.about .txt {
+  margin-top: 50px;
+  margin: auto;
+}
+
+.flower-box {
+  background-attachment: scroll;
+  height: 100px;
+}
+
+.macro-photo {
+  background-attachment: scroll;
+  height: 250px;
+}
+
+.portrait {
+  height: 300px;
+  width: 300px;
+  margin-left: -150px;
+  background-image: url("../images/portrait_2.jpg");
+  background-attachment: scroll;
+  size: cover;
+}
+
+.email {
+  margin-top: 600px;
+}
+
+.content {
+  max-width: 300px;
+  left: 50%;
+  margin-left: -150px;
+}
